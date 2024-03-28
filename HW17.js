@@ -124,7 +124,6 @@ switch (direction) {
         break;
     default:
         alert("Вы ввели неверное направление. Попробуйте еще раз.");
-        break;
 };
 
 
