@@ -54,7 +54,7 @@ const documents = true;
 const pen = true;
 const apple = false;
 const orange = true;
-const shouldGoToWork = (key && documents && pen) && (apple || orange);
+const shouldGoToWork = key && documents && pen && (apple || orange);
 console.log(shouldGoToWork);
 
 // Задача 5.
