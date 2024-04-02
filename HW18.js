@@ -4,8 +4,9 @@
 // Написать функцию getSum , которая будет высчитывать сумму чисел от нуля до
 // переданного в нее параметра. Если передадим число 100 то, надо вычислить
 // сумму чисел от 0 до 100 (должно получится 5050).
-let count = 0;
+
 const getSum = (num)  => {
+    let count = 0;
     for (let i = 0; i <= num; ++i){
         count = count + i;
         console.log(count);
@@ -111,12 +112,8 @@ const triangle = (a, b, c) => {
     if (a <= 0 || b <= 0 || c <= 0) {
         return false;
     };
+    return  a + b > c && a + c > b && b + c > a
 
-    if ( a + b > c && a + c > b && b + c > a ) {
-        return true;
-    } else {
-        return false;
-    };
 };
 console.log(triangle(1, 2, 2));
 
