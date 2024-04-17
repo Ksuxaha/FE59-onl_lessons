@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main {
+    padding: 25px;
+}
+.container{
+    width:800px;
+    background: darkgrey;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+.wrapper_up{
+    text-align: center;
+}
+.first{
+    margin: 15px;
+    width: 100%;
+}
+.first_button{
+    width: 100%;
+    margin: 25px 10px 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 5px;
+    background: #d19dee;
+    text-align: center;
+    color: rgb(115, 112, 112);
+}
+.first_button_Add{
+    width: 100%;
+    margin: 25px 10px 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 30px;
+    background: #d19dee;
+    text-align: center;
+    color: rgb(115, 112, 112);
+}
+input{
+    background: white;
+    width: 250px;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+input::placeholder{
+    color: #d3cdcd;
+    text-align: center;
+}
+.SomeText{
+    color: rgb(115, 112, 112);
+    font-size: 18px;
+    margin: 10px;
+}
+.second{
+    margin: 15px;
+}
+.second_button{
+    width: 100%;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background: #d19dee;
+    text-align: center;
+    color: rgb(115, 112, 112);
+}
+.secondInput{
+
+    width: 100px;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+
+.wrapper_down{
+width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
+
+.firstDown{
+    width: 50%;
+    background: #424141;
+    border: 1px solid black;
+    border-radius: 15px;
+   margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+.wrapper_down__SomeText{
+    text-align: center;
+    color: rgb(115, 112, 112);
+    margin: 0px auto;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: whitesmoke;
+    width: 60%;
+    padding: 10px;
+    margin-right: 108px;
+}
+.wrapper_down__SomeText:before{
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 16px;
+    background-color: #fff;
+    border: 2px solid #000;
+    cursor: pointer;
+    bottom: 40px;
+    background: #d19dee;
+    left: 7px;
+}
+.wrapper_down__SomeText:after{
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 16px;
+    background-color: #fff;
+    border: 2px solid #000;
+    cursor: pointer;
+    top: 10px;
+    background: #d19dee;
+    right: 10px;
+}
+
+.text{
+    display: flex;
+    justify-content: right;
+}
+.DateText{
+    text-align: center;
+    color: rgb(115, 112, 112);
+
+    border: 1px solid white;
+    border-radius: 5px;
+    background: whitesmoke;
+    width: 20%;
+}
+.secondDown{
+    width: 50%;
+    background: darkgrey;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 10px auto;
+    padding: 10px;
+    position: relative;
+}
