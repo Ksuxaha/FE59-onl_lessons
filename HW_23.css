@@ -13,14 +13,14 @@
     border-radius: 15px;
     margin: 0 auto;
 }
-.wrapper_up{
+.main__contentUp{
     text-align: center;
 }
-.first{
+.main__contentUp__first{
     margin: 15px;
     width: 100%;
 }
-.first_button{
+.main__contentUp__first__button{
     width: 100px;
     margin: 25px 10px 25px;
     border: 1px solid black;
@@ -31,7 +31,7 @@
     color: rgb(115, 112, 112);
     cursor: pointer;
 }
-.first_button_Add{
+.main__contentUp__first__button__add{
     width: 100px;
     margin: 25px 10px 25px;
     border: 1px solid black;
@@ -57,10 +57,10 @@ input::placeholder{
     font-size: 18px;
     margin: 10px;
 }
-.second{
+.main__contentUp__second{
     margin: 15px;
 }
-.second_button{
+.main__contentUp__second__button{
     width: 150px;
     margin: 5px;
     cursor: pointer;
@@ -71,7 +71,7 @@ input::placeholder{
     text-align: center;
     color: rgb(115, 112, 112);
 }
-.secondInput{
+.main__contentUp__second__button__input{
 
     width: 100px;
     border-radius: 5px;
@@ -79,14 +79,14 @@ input::placeholder{
 }
 
 
-.wrapper_down{
+.main__contentDown{
 width: 100%;
     margin: 0 auto;
     align-items: center;
     text-align: center;
 }
 
-.firstDown{
+.main__contentDown__first{
     width: 50%;
     background: #424141;
     border: 1px solid black;
@@ -95,7 +95,7 @@ width: 100%;
     padding: 10px;
     position: relative;
 }
-.wrapper_down__SomeText{
+.main__contentDown__first__SomeText, .main__contentDown__second__SomeText{
     text-align: center;
     color: rgb(115, 112, 112);
     margin: 0px auto;
@@ -121,7 +121,7 @@ width: 100%;
     background: whitesmoke;
     width: 20%;
 }
-.secondDown{
+.main__contentDown__second{
     width: 50%;
     background: darkgrey;
     border: 1px solid black;
