@@ -13,6 +13,9 @@
     border-radius: 15px;
     margin: 0 auto;
 }
+.button{
+    background: black;
+}
 .main__contentUp{
     text-align: center;
 }
@@ -20,7 +23,7 @@
     margin: 15px;
     width: 100%;
 }
-.main__contentUp__first__button{
+.main__contentUp__first__button , .main__contentUp__second__button{
     width: 100px;
     margin: 25px 10px 25px;
     border: 1px solid black;
@@ -42,7 +45,7 @@
     color: rgb(115, 112, 112);
     cursor: pointer;
 }
-input{
+.input{
     background: white;
     width: 250px;
     border-radius: 5px;
@@ -52,7 +55,7 @@ input::placeholder{
     color: #d3cdcd;
     text-align: center;
 }
-.SomeText{
+.SomeText1, .SomeText2{
     color: rgb(115, 112, 112);
     font-size: 18px;
     margin: 10px;
@@ -60,7 +63,7 @@ input::placeholder{
 .main__contentUp__second{
     margin: 15px;
 }
-.main__contentUp__second__button{
+.main__contentUp__second__button1, .main__contentUp__second__button2{
     width: 150px;
     margin: 5px;
     cursor: pointer;
@@ -104,7 +107,7 @@ width: 100%;
     background: whitesmoke;
     width: 60%;
     padding: 10px;
-    margin-right: 104px;
+    margin-right: 85px;
 }
 
 
@@ -115,7 +118,6 @@ width: 100%;
 .DateText{
     text-align: center;
     color: rgb(115, 112, 112);
-
     border: 1px solid white;
     border-radius: 5px;
     background: whitesmoke;
@@ -136,12 +138,12 @@ width: 100%;
     content:"";
     position: absolute;
     bottom: 42px;
-    right: 150px;
+    right: 250px;
 }
 .rightInput[type=checkbox] {
     margin-right: 100px;
     content:"";
     position: absolute;
     bottom: 60px;
-    left: 248px;
+    left: 365px;
 }
