@@ -31,28 +31,11 @@ addTaskButton.addEventListener("click", () => {
         }
 });
 
-
-//     const doneInputs = document.querySelector("li");
-// doneInputs.addEventListener(`click`, (e) => {})
-//     doneInputs.classList.add("completed");
-//     if (doneInputs) {}
-
     ulTodos.addEventListener('click', (event) => {
-
-
       if(event.target.classList.contains('todo__completed')){
-          const taskInputDone = event.target.parentElement;
+          const taskInputDone = event.target.parentElement.parentElement;
+          console.log(taskInputDone)
           taskInputDone.classList.add(`completed`)
-          taskInputDone.innerHTML = `
-      <div class="todo__wrapper">
-                <input type="checkbox" class="todo__completed" checked />
-                <div class="todo__text">Todo text</div>
-                <div class="todo__action">
-                  <button class="todo__close btn btn_small btn_red">Х</button>
-                  <span class="todo__date">Date</span>
-                </div>
-              </div>
-              `;
       }
     })
 
