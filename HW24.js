@@ -31,17 +31,21 @@ addTaskButton.addEventListener("click", () => {
         }
 });
 
-    ulTodos.addEventListener('click', (event) => {
-      if(event.target.classList.contains('todo__completed')){
-          const taskInputDone = event.target.parentElement.parentElement;
-          console.log(taskInputDone)
-          taskInputDone.classList.add(`completed`)
-      }
-    })
+
+const isChecked = function (checkbox) {
+    const parent = checkbox.parentElement.parentElement;
 
 
+    if (checkbox.checked) {
+        parent.classList.add(`completed`);
+    };
+        console.log(`Why???`)
+        parent.classList.add(`todo__completed`);
 
-  function deleteCard(event) {
+};
+
+
+const deleteCard = function(event) {
 
     const currentTaskLi = event.target.parentElement.parentElement.parentElement;
     ulTodos.removeChild(currentTaskLi);
@@ -55,14 +59,31 @@ addTaskButton.addEventListener("click", () => {
     });
 
 
+
+ulTodos.addEventListener('click', (event) => {
+
+    if (event.target.classList.contains('todo__close')) {
+        deleteCard(event);
+    }
+
+    else if (event.target.classList.contains('todo__completed')) {
+        isChecked(event.target);
+    }
+});
+
+
+
 const deleteAllButton = document.querySelector(`.actions__delete-all`);
-    deleteAllButton.addEventListener(`click`, (event) => {
-        const allTasksLi = event.target.parentElement;
-        ulTodos.remove(allTasksLi)
-    })
+deleteAllButton.addEventListener('click', () => {
+    ulTodos.innerHTML = '';
+});
 
+const deleteLastButton = document.querySelector(`.actions__delete-last`);
+deleteLastButton.addEventListener(`click`, () => {
+   const lastChild = ulTodos.lastChild;
+    console.log(lastChild)
+    ulTodos.removeChild(lastChild);
 
-
-
+})
 
 
