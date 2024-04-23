@@ -37,7 +37,9 @@ ulTodos.addEventListener('click', (event) => {
 
     if(taskInputDone.classList.contains('completed')){
         taskInputDone.classList.remove(`completed`)
-    }else {
+    }else if (event.target.classList.contains('todo__close')) {
+        deleteCard(event);
+    } else {
         taskInputDone.classList.add(`completed`)
     }
 
@@ -51,12 +53,6 @@ const deleteCard = function(event) {
     ulTodos.removeChild(currentTaskLi);
 }
 
-    ulTodos.addEventListener(`click` ,(event) =>{
-        if (event.target.classList.contains('todo__close')) {
-            deleteCard(event);
-        }
-
-    });
 
 
 const deleteAllButton = document.querySelector(`.actions__delete-all`);
